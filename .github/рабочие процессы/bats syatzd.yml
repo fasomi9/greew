@@ -5,24 +5,24 @@
 # .ban | .unban | .kick | .promote | .demote
 @loader.tds
 class BanMod(loader.Module):
-    """Админтулс"""
+    """chatTools"""
 
     strings = {
-        "name": "AdminTools",
-        "not_supergroup": "<b>Это не супергруппа!</b>",
-        "not_group": "<b>Это не группа!</b>",
-        "ban_none": "<b>Кого банить?</b>",
-        "unban_none": "<b>Кого разбанить?</b>",
+        "name": "chatTools",
+        "not_supergroup": "<b>это не супергрупа!</b>",
+        "not_group": "<b>а это не группа!</b>",
+        "ban_none": "<b>кто добровольцем в бан?</b>",
+        "unban_none": "<b>кто хочет сюда?</b>",
         "kick_none": "<b>Кто хочет принудительно покинуть чат?</b>",
-        "promote_none": "<b>Кто хочет опку?</b>",
-        "demote_none": "<b>Укажи с кого снять админку?</b>",
+        "promote_none": "<b>Кто хочет админочку?</b>",
+        "demote_none": "<b>кто хочет решиться админки</b>",
         "who": "<b>Кого...?</b>",
-        "not_admin": "<b>Я не администратор...</b>",
-        "banned": "<code>{}</code> <b>Получил бан!</b>\n<b>ID:</b> <code>{}</code>",
-        "unbanned": "<code>{}</code> <b>Получил разбан!</b>\n<b>ID:</b> <code>{}</code>",
-        "kicked": "<code>{}</code> <b>Был кикнул!</b>\n<b>ID:</b> <code>{}</code>",
-        "promoted": "<code>{}</code> <b>Получил права администратора!</b>\n<b>ID:</b> <code>{}</code>",
-        "demoted": "<code>{}</code> <b>Потерял права администратора!</b>\n<b>ID:</b> <code>{}</code>",
+        "not_admin": "<b>я тут лох дайте права</b>",
+        "banned": "<code>{}</code> <b>бб-бай бай</b>\n<b>ID:</b> <code>{}</code>",
+        "unbanned": "<code>{}</code> <b>вусап бро</b>\n<b>ID:</b> <code>{}</code>",
+        "kicked": "<code>{}</code> <b>был и хоба не стало!</b>\n<b>ID:</b> <code>{}</code>",
+        "promoted": "<code>{}</code> <b>нашёл права администратора!</b>\n<b>ID:</b> <code>{}</code>",
+        "demoted": "<code>{}</code> <b>лох просрал права администратора!</b>\n<b>ID:</b> <code>{}</code>",
     }
 
     @loader.group_admin_ban_users
