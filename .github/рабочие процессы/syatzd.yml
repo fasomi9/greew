@@ -1,4 +1,4 @@
-# Name: ban
+# Name: ChatTools
 # Description: команды для поддержания порядка а чате 
 # Author: shyatzd
 # Commands:
@@ -16,10 +16,10 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class BanMod(loader.Module):
-    """chatTools"""
+    """chatTools 0.2"""
 
     strings = {
-        "name": "chatTools",
+        "name": "chatTools 0.2",
         "not_supergroup": "<b>это не супергруппа!</b>",
         "not_group": "<b>а это не группа!</b>",
         "ban_none": "<b>кто добровольцем в бан?</b>",
@@ -39,7 +39,7 @@ class BanMod(loader.Module):
     @loader.group_admin_ban_users
     @loader.ratelimit
     async def bancmd(self, message):
-        """Бан в чате"""
+        """послать агро далеко и надолго (@ или Reply)"""
         if not isinstance(message.to_id, PeerChannel):
             return await utils.answer(message, self.strings("not_supergroup", message))
         if message.is_reply:
@@ -80,7 +80,7 @@ class BanMod(loader.Module):
     @loader.group_admin_ban_users
     @loader.ratelimit
     async def unbancmd(self, message):
-        """Разбан в чате"""
+        """вернуть агро, потому что он угарный (@ или Reply)"""
         if not isinstance(message.to_id, PeerChannel):
             return await utils.answer(message, self.strings("not_supergroup", message))
         if message.is_reply:
@@ -121,7 +121,7 @@ class BanMod(loader.Module):
     @loader.group_admin_ban_users
     @loader.ratelimit
     async def kickcmd(self, message):
-        """Кикнуть из чата"""
+        """послать агро в окно (@ или Reply) (жаль быстро вернётся)"""
         if isinstance(message.to_id, PeerUser):
             return await utils.answer(message, self.strings("not_group", message))
         if message.is_reply:
@@ -164,7 +164,7 @@ class BanMod(loader.Module):
     @loader.group_admin_add_admins
     @loader.ratelimit
     async def promotecmd(self, message):
-        """Дать админку"""
+        """поднять в звание (@ или Reply)"""
         if message.is_reply:
             user = await utils.get_user(await message.get_reply_message())
         else:
@@ -218,7 +218,7 @@ class BanMod(loader.Module):
 
     @loader.group_admin_add_admins
     async def demotecmd(self, message):
-        """Снять админку"""
+        """сослать нищенку с поста (@ или Reply)"""
         if message.is_reply:
             user = await utils.get_user(await message.get_reply_message())
         else:
