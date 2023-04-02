@@ -4,7 +4,6 @@
 # .ban | .unban | .kick | .promote | .demote | .prefix
 # scope: hikka_only
 # scope: hikka_min 1.6.0
-# meta developer: @shyatzd
 
 from .. import loader, utils, security
 import logging
