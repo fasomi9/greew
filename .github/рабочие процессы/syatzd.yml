@@ -191,12 +191,14 @@ class BanMod(loader.Module):
                         message.chat_id,
                         user.id,
                         ChatAdminRights(
-                            post_messages=None,
-                            add_admins=None,
-                            invite_users=None,
-                            change_info=None,
-                            ban_users=None,
                             delete_messages=True,
+                            ban_users=True,
+                            invitation links=True,
+                            voice chat management=True
+                            add_admins=None,
+                            invite_users=True,
+                            change_info=None,
+                            
                             pin_messages=True,
                             edit_messages=None,
                         ),
