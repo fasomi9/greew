@@ -29,7 +29,7 @@ class BanMod(loader.Module):
         "kick_none": "<b>Кто хочет принудительно покинуть чат?</b>",
         "promote_none": "<b>Кто хочет админ0чку?</b>",
         "demote_none": "<b>кто хочет решиться админки</b>",
-        "prefix_none": "<b>кто хочет префикс?</b>",
+        "prefix_none": "<b>кто достоин левел-апа?</b>",
         "who": "<b>Кого...?</b>",
         "not_admin": "<b>я тут лох дайте права</b>",
         "banned": "<code>{}</code> <b>бб-бай бай</b>\n<b>ID:</b> <code>{}</code>",
