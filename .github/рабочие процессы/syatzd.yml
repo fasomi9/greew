@@ -1,12 +1,13 @@
 # Name: ChatTools
 # Description: команды для поддержания порядка а чате 
 # Author: @shyatzd
-# meta-developer: @shyatzd
-# Version: 1.0.2
-# Commands:
-# .ban | .unban | .kick | .promote | .demote | .prefix
+# scope: inline 
 # scope: hikka_only
 # scope: hikka_min 1.6.0
+# meta developer: @shyatzd
+# Commands:
+# .ban | .unban | .kick | .promote | .demote | .prefix
+
 
 from .. import loader, utils, security
 import logging
@@ -263,7 +264,7 @@ class BanMod(loader.Module):
                             pin_messages=None,
                             edit_messages=None,
                             manage_call=None,
-                            other=true,
+                            name=true,
                             
                         ),
                         rank,
