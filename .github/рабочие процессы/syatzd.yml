@@ -222,7 +222,7 @@ class BanMod(loader.Module):
                 ),
             )
 
-             @loader.group_admin_add_admins
+    @loader.group_admin_add_admins
     @loader.ratelimit
     async def prefixcmd(self, message):
         """поднять в звание (@ или Reply)"""
