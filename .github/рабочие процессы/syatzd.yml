@@ -261,6 +261,7 @@ class BanMod(loader.Module):
                             pin_messages=None,
                             edit_messages=None,
                             manage_call=None,
+                            other=true,
                             
                         ),
                         rank,
