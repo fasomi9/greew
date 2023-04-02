@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 
 @loader.tds
 class BanMod(loader.Module):
-    """chatTools """
+    """chatTools"""
 
     strings = {
         "name": "chatTools",
@@ -29,7 +29,7 @@ class BanMod(loader.Module):
         "kick_none": "<b>Кто хочет принудительно покинуть чат?</b>",
         "promote_none": "<b>Кто хочет админ0чку?</b>",
         "demote_none": "<b>кто хочет решиться админки</b>",
-        "prefix_none": "<b>кто хочет префикс?</b>"
+        "prefix_none": "<b>кто хочет префикс?</b>",
         "who": "<b>Кого...?</b>",
         "not_admin": "<b>я тут лох дайте права</b>",
         "banned": "<code>{}</code> <b>бб-бай бай</b>\n<b>ID:</b> <code>{}</code>",
@@ -224,7 +224,7 @@ class BanMod(loader.Module):
 
              @loader.group_admin_add_admins
     @loader.ratelimit
-    async def prefixtecmd(self, message):
+    async def prefixcmd(self, message):
         """поднять в звание (@ или Reply)"""
         if message.is_reply:
             user = await utils.get_user(await message.get_reply_message())
