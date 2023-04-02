@@ -191,14 +191,16 @@ class BanMod(loader.Module):
                         message.chat_id,
                         user.id,
                         ChatAdminRights(
-                            post_messages=True,
+                            post_messages=None,
                             add_admins=None,
                             invite_users=True,
                             change_info=None,
                             ban_users=True,
                             delete_messages=True,
                             pin_messages=None,
-                            edit_messages=True,
+                            edit_messages=None,
+                            manage_call=True,
+                            
                         ),
                         rank,
                     )
