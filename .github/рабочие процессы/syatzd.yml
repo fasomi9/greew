@@ -1,5 +1,6 @@
 # Name: ChatTools
 # Description: команды для поддержания порядка а чате 
+# Author: @shyatzd
 # Commands:
 # .ban | .unban | .kick | .promote | .demote | .prefix
 # scope: hikka_only
