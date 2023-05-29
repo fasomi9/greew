@@ -17,7 +17,7 @@ from telethon.tl.functions.messages import EditChatAdminRequest
 
 logger = logging.getLogger(__name__)
 
-@loader.description(en_doc=("module for easier control of your chat"))
+self.doc(en_doc"module for easier control of your chat")
 @loader.tds
 class admMod(loader.Module):
     """модуль для более лёгкого контроля вашего чата"""
