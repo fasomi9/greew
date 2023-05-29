@@ -1,5 +1,5 @@
 # Name:Admin tools
-# Meta bannner: 
+# Meta bannner: http://devs.farkhodovme.tk/bannerget/bloody/admintools.png
 # scope:hikka_only
 # scope:hikka_min 1.6.0
 # meta developer:@shyatzd
@@ -23,6 +23,7 @@ class admMod(loader.Module):
     
     strings_en = {
         "name": "AdminTools",
+        "description":
         "not_supergroup": "<b>dude, this is not a supergroup!</b>",
         "not_group": "<b>dude, this is not a group!</b>",
         "ban_none": "<b>who volunteered for the ban?</b>",
@@ -43,7 +44,7 @@ class admMod(loader.Module):
 
     strings_ru = {
         "name": "AdminTools",
-        ""
+        "description":
         "not_supergroup": "<b>это не супергруппа!</b>",
         "not_group": "<b>а это не группа!</b>",
         "ban_none": "<b>кто добровольцем в бан?</b>",
