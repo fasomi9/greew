@@ -4,7 +4,6 @@
 # meta developer:@shyatzd
 # Commands:
 # .ban | .unban | .kick | .promote | .demote | .prefix
-# Meta bannner:http://devs.farkhodovme.tk/bannerget/bloody/admintools.png
 
 
 from .. import loader, utils, security
@@ -23,7 +22,6 @@ class toolMod(loader.Module):
     
     strings_en = {
         "name": "AdamTools",
-        "description": "module for easier control of your chat",
         "not_supergroup": "<b>dude, this is not a supergroup!</b>",
         "not_group": "<b>dude, this is not a group!</b>",
         "ban_none": "<b>who volunteered for the ban?</b>",
@@ -44,7 +42,6 @@ class toolMod(loader.Module):
 
     strings_ru = {
         "name": "AdamTools",
-        "description": "модуль для более лёгкого контроля вашего чата",
         "not_supergroup": "<b>это не супергруппа!</b>",
         "not_group": "<b>а это не группа!</b>",
         "ban_none": "<b>кто добровольцем в бан?</b>",
@@ -104,6 +101,7 @@ class toolMod(loader.Module):
                     utils.escape_html(user.first_name), user.id
                 ),
             )
+            
     @loader.command(en_doc=("return the fool because he is funny"))
     @loader.group_admin_ban_users
     @loader.ratelimit
