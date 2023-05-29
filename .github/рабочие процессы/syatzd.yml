@@ -354,7 +354,7 @@ class admMod(loader.Module):
                 ),
             )
 
-     @loader.command(ru_doc="")
+    @loader.command(ru_doc="")
     @loader.group_admin_ban_users
     @loader.ratelimit
     async def bancmd(self, message):
