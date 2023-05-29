@@ -63,7 +63,7 @@ class admMod(loader.Module):
         "prefixed": "<code>{}</code> <b>красава, поднялся на первый уровень!</b>\n<b>ID:</b> <code>{}</code>", 
     }
     
-    @loader.command(en_doc="")
+    @loader.command(en_doc="ban")
     @loader.group_admin_ban_users
     @loader.ratelimit
     async def bancmd(self, message):
@@ -108,7 +108,7 @@ class admMod(loader.Module):
     @loader.group_admin_ban_users
     @loader.ratelimit
     async def unbancmd(self, message):
-        """вернуть агро, потому что он угарный (@ или Reply)"""
+        """lkhhlh(@ или Reply)"""
         if not isinstance(message.to_id, PeerChannel):
             return await utils.answer(message, self.strings("not_supergroup", message))
         if message.is_reply:
@@ -354,7 +354,7 @@ class admMod(loader.Module):
                 ),
             )
 
-    @loader.command(ru_doc="")
+    @loader.command(ru_doc="ban")
     @loader.group_admin_ban_users
     @loader.ratelimit
     async def bancmd(self, message):
