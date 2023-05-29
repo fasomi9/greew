@@ -27,7 +27,7 @@ class admMod(loader.Module):
         "not_group": "<b>dude, this is not a group!</b>",
         "ban_none": "<b>who volunteered for the ban?</b>",
         "unban_none": "<b>who wants to come back?</b>",
-        "kick_none": "<b>?</b>",
+        "kick_none": "<b>who to fuck off?</b>",
         "promote_none": "<b>who to give admin0chku</b>",
         "demote_none": "<b>who wants to lose admin0chku</b>",
         "prefix_none": "<b>who to raise in rank?</b>",
