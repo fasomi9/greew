@@ -1,7 +1,7 @@
-# Name:AdamTools
-# scope:hikka_only
-# scope:hikka_min 1.6.0
-# meta developer:@shyatzd
+# Name: AdamTools
+# scope: hikka_only
+# scope: hikka_min 1.6.0
+# meta developer: @shyatzd
 # Commands:
 # .ban | .unban | .kick | .promote | .demote | .prefix
 
@@ -60,9 +60,9 @@ class toolMod(loader.Module):
         "prefixed": "<code>{}</code> <b>красава, поднялся на первый уровень!</b>\n<b>ID:</b> <code>{}</code>", 
     }
     
-    @loader.command(en_doc=("ban the stupid fool"))
     @loader.group_admin_ban_users
     @loader.ratelimit
+    @loader.command(en_doc=("ban the stupid fool"))
     async def bancmd(self, message):
         """послать агро далеко и надолго (@ или Reply)"""
         if not isinstance(message.to_id, PeerChannel):
@@ -102,9 +102,9 @@ class toolMod(loader.Module):
                 ),
             )
             
-    @loader.command(en_doc=("return the fool because he is funny"))
     @loader.group_admin_ban_users
     @loader.ratelimit
+    @loader.command(en_doc=("return the fool because he is funny"))
     async def unbancmd(self, message):
         """вернуть агро, потому что он угарный (@ или Reply)"""
         if not isinstance(message.to_id, PeerChannel):
@@ -144,9 +144,9 @@ class toolMod(loader.Module):
                 ),
             )
 
-    @loader.command(en_doc=("send a fool out the window "))
     @loader.group_admin_ban_users
     @loader.ratelimit
+    @loader.command(en_doc=("send a fool out the window "))
     async def kickcmd(self, message):
         """послать агро в окно (@ или Reply) (жаль быстро вернётся)"""
         if isinstance(message.to_id, PeerUser):
@@ -188,9 +188,10 @@ class toolMod(loader.Module):
                 ),
             )
 
-    @loader.command(en_doc=("raise dobby rank"))
+    
     @loader.group_admin_add_admins
     @loader.ratelimit
+    @loader.command(en_doc=("raise dobby rank"))
     async def promotecmd(self, message):
         """поднять в звание (@ или Reply)"""
         if message.is_reply:
